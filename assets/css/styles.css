@@ -1,0 +1,519 @@
+/* Apply Noto Sans Khmer globally or to specific elements */
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
+/* Or apply it specifically to the navigation, header, or other elements */
+nav,
+header,
+.about-section {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+nav ul li .dropdown li {
+  margin: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #007bff;
+  color: #fff;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+header .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header .cta-button {
+  background-color: #fff;
+  color: #007bff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+header .cta-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-section {
+  padding: 3rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Increased gap between images */
+  margin-bottom: 2rem; /* Increased margin for more space */
+}
+
+.image-wrapper {
+  width: 200px; /* Increased width */
+  height: 200px; /* Increased height */
+  overflow: hidden;
+  border-radius: 20%;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+h2,
+h3 {
+  margin-top: 2rem; /* Increased margin for more space between text and images */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+
+/* Projects Section */
+.projects-section .project-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.projects-section .project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+}
+
+.projects-section .project img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.projects-section .project h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.projects-section .project p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-section .project .cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.projects-section .project .cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog Section */
+.blog-section {
+  background-color: #f0f0f0;
+}
+
+.blog-section .cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.blog-section .cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact-section .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-section .cta-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.contact-section .cta-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+/* Social Links */
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+/* Default styles for social links */
+.social-links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+/* Platform-specific colors */
+.social-links a[aria-label="LinkedIn"] {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-links a[aria-label="TikTok"] {
+  color: #000000; /* TikTok Black */
+}
+
+.social-links a[aria-label="YouTube"] {
+  color: #ff0000; /* YouTube Red */
+}
+
+.social-links a[aria-label="Facebook"] {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.social-links a[aria-label="Telegram"] {
+  color: #0088cc; /* Telegram Blue */
+}
+
+.social-links a[aria-label="GitHub"] {
+  color: #333333; /* GitHub Dark Gray */
+}
+
+/* Icons */
+.social-links i {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  nav ul li .dropdown {
+    position: static;
+  }
+
+  .projects-section .project-set {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-section .project {
+    width: 100%;
+  }
+}
+/* Social Profile Cards */
+.social-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Reduced gap for a compact look */
+  margin-top: 1.5rem;
+}
+
+.social-card {
+  width: 140px; /* Smaller card size */
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(5px); /* Adds a slight blur effect */
+  border-radius: 10px;
+  padding: 0.8rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-card img {
+  width: 60px; /* Smaller circular profile image */
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.4rem;
+}
+
+.social-card h3 {
+  font-size: 0.85rem;
+  margin: 0.3rem 0;
+  color: #00a6ff;
+}
+
+.social-card a {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  margin-top: 0.4rem;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Platform-Specific Colors */
+.linkedin {
+  background: #0077b5;
+  color: #fff;
+}
+.linkedin:hover {
+  background: #005582;
+}
+
+.tiktok {
+  background: #000;
+  color: #fff;
+}
+.tiktok:hover {
+  background: #333;
+}
+
+.youtube {
+  background: #ff0000;
+  color: #fff;
+}
+.youtube:hover {
+  background: #cc0000;
+}
+
+.facebook {
+  background: #1877f2;
+  color: #fff;
+}
+.facebook:hover {
+  background: #1256b0;
+}
+
+.telegram {
+  background: #0088cc;
+  color: #fff;
+}
+.telegram:hover {
+  background: #006b99;
+}
+
+.github {
+  background: #333;
+  color: #fff;
+}
+.github:hover {
+  background: #222;
+}
+/* General Section Styling */
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.about-content h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Cards for Sections */
+.about-card {
+  background: #f8f9fa;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Lists inside Cards */
+.about-card ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
+.language-selector a {
+  display: flex;
+  align-items: center;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  margin-right: 10px;
+}
