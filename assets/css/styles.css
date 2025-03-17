@@ -517,3 +517,35 @@ footer p {
   height: 16px;
   margin-right: 10px;
 }
+@media screen and (max-width: 480px) {
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section, .projects-section, .contact-section {
+    padding: 2rem 0;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .projects-section .project {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .social-card {
+    width: 120px; /* smaller cards on very small screens */
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+}
+
